@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Meridian</title>
+  <meta name="description" content="About this example static website.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span>Meridian</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <h1>A little context</h1>
+        <p class="lede">
+          Meridian is a placeholder. The words are filler, but the markup and styles
+          are real and meant to be reused.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <h2>Why static?</h2>
+        <p>
+          A static site is the least fragile thing you can put on the internet. There's
+          no process to crash, no database to migrate, and no dependency tree to audit.
+          nginx reads a file off disk and sends it — that path has been fast and stable
+          for two decades.
+        </p>
+        <p>
+          It's also the easiest thing to hand off. Anyone who can read HTML can change
+          a headline, and there's no way to break the build, because there isn't one.
+        </p>
+
+        <h2>How it's put together</h2>
+        <p>
+          Three HTML documents share <code>css/styles.css</code>. The stylesheet opens
+          with a block of custom properties — colors, spacing, radii, and shadows — so
+          most visual changes are a one-line edit near the top of the file.
+        </p>
+        <p>
+          Layout uses CSS grid for the card sections and flexbox for the header and
+          footer. The mobile menu is a hidden checkbox paired with a label, which is
+          why the whole site still works with JavaScript disabled.
+        </p>
+
+        <h2>File layout</h2>
+        <pre><code>example_website/
+├── index.html
+├── about.html
+├── contact.html
+├── 404.html
+└── css/
+    └── styles.css</code></pre>
+
+        <h2>Making it yours</h2>
+        <ol>
+          <li>Edit the <code>--brand</code> and <code>--bg</code> variables in the stylesheet.</li>
+          <li>Replace the copy on each page.</li>
+          <li>Swap the <code>◆</code> brand mark for a logo image if you have one.</li>
+          <li>Point nginx at this directory and reload.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">The team</h2>
+        <p class="section-sub">Entirely fictional, purely for layout purposes.</p>
+        <div class="grid grid-3">
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">AR</div>
+            <h3>Avery Rowe</h3>
+            <p class="role">Design</p>
+            <p>Spends an unreasonable amount of time on line height.</p>
+          </article>
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">JL</div>
+            <h3>Jordan Lee</h3>
+            <p class="role">Engineering</p>
+            <p>Believes most problems are solved by deleting code.</p>
+          </article>
+          <article class="card person">
+            <div class="avatar" aria-hidden="true">SK</div>
+            <h3>Sam Kaur</h3>
+            <p class="role">Operations</p>
+            <p>Keeps the config files tidy and the certs from expiring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span>Meridian</span>
+        </a>
+        <p class="muted">An example static site. Not a real company.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="copyright">© 2026 Meridian Example. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>

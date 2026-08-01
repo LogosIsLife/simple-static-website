@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridian — Example Website</title>
+  <meta name="description" content="An example static website built with plain HTML and CSS.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span>Meridian</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Static · Fast · No JavaScript</p>
+        <h1>A clean starting point for your next site.</h1>
+        <p class="lede">
+          This is an example website made of nothing but HTML and CSS. Drop it behind
+          nginx, point the root at this directory, and it just works — no build step,
+          no dependencies, no runtime.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="about.html">Learn more</a>
+          <a class="button button-ghost" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What's included</h2>
+        <p class="section-sub">Everything below is plain markup and a single stylesheet.</p>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Zero dependencies</h3>
+            <p>No frameworks, no bundler, no package manager. Edit a file, refresh the page, done.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📐</div>
+            <h3>Responsive layout</h3>
+            <p>CSS grid and flexbox handle everything from a phone to an ultrawide monitor.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🌗</div>
+            <h3>Light &amp; dark</h3>
+            <p>Colors are driven by custom properties and follow the visitor's system theme.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">♿</div>
+            <h3>Accessible defaults</h3>
+            <p>Semantic landmarks, a skip link, visible focus rings, and readable contrast.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧩</div>
+            <h3>Reusable pieces</h3>
+            <p>Cards, buttons, a nav bar, a form, and a footer you can copy anywhere.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📦</div>
+            <h3>Deploy anywhere</h3>
+            <p>It's just files. Serve it from nginx, a CDN, or a USB stick if you like.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2 class="section-title">Built for the simplest possible hosting</h2>
+            <p>
+              Every page is a self-contained document. There is no server-side rendering,
+              no API to keep alive, and nothing to restart after a deploy. Copy the
+              directory, reload nginx, and the new version is live.
+            </p>
+            <ul class="checklist">
+              <li>Three pages plus a 404, sharing one stylesheet</li>
+              <li>Relative links throughout, so it works from any path</li>
+              <li>Mobile menu built with a checkbox — still no JavaScript</li>
+              <li>About 32&nbsp;KB total, uncompressed</li>
+            </ul>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value">0</span>
+              <span class="stat-label">Dependencies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Pages</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">1</span>
+              <span class="stat-label">Stylesheet</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">32 KB</span>
+              <span class="stat-label">Total size</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Ready to make it yours?</h2>
+        <p>Change the text, swap the colors at the top of the stylesheet, and ship it.</p>
+        <a class="button button-primary" href="contact.html">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span>Meridian</span>
+        </a>
+        <p class="muted">An example static site. Not a real company.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="copyright">© 2026 Meridian Example. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>
